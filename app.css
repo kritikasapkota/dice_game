@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: palevioletred;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+ 
+}
+
+
+.player {
+  background-color: plum;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 45%;
+  min-width: 280px;
+  height: 500px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.player--0 {
+  font-size: larger;
+  background-color: pink;
+  color:red;
+}
+
+.player--1 {
+  font-size: larger;
+  background-color: lightpink;
+  color: red;
+}
+
+.name {
+  font-size: 37px;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+  
+}
+
+.current {
+  background-color: coral;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.label-current {
+  font-size: 1rem;
+  color: white;
+}
+
+.current-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+.btn {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: purple;
+}
+
+
+.dice {
+ text-align: center;
+  width: 100%;
+}
+
+.dice-img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 0 5px white);
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player {
+    width: 90%;
+    height: auto;
+  }
+
+  .score {
+    font-size: 2rem;
+  }
+
+  .current-score {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .dice-img {
+    width: 80px;
+  }
+}
